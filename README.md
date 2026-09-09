@@ -19,3 +19,14 @@ git push origin main
 git pull origin main
 
 ```
+
+## Python Foundation
+
+- Primitive Variables
+- Functions
+- Objects
+- Class
+- Class deep dive
+- Operations & Conditions
+- Loops
+- ...
