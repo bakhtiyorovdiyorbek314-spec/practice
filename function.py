@@ -51,3 +51,40 @@ print('result4:', result4)
 # bu holda age kiritilmagani uchun tepadan DEFAULT qilib oldi
 result5 = give_greet("John")
 print('result5:', result5)
+
+
+print("==== SCOPE =====")
+
+b = 200  # third
+
+# Define
+
+
+def calculate(a):
+    c = a*40  # first
+    print(f" c natija teng:{c}")
+
+
+# CALL
+calculate(5)
+
+
+def calculate(a, b):
+    c = a*b
+    print(f" c natija teng:{c}")
+
+
+# CALL
+calculate(5, 50)  # second
+
+
+def calculate(a):
+    c = a*b
+    print(f" c natija teng:{c}")
+
+
+# CALL
+calculate(5)
+
+# SCOPE  Priority tushunchasi bilan keladi, bu berilgan argument larni qaysi birini olishni tanlashdir,
+# (1) Function ichidan izlaydi> otherwise > (2) CALL qismdan izlaydi > (3) Tashqaridan oladi
