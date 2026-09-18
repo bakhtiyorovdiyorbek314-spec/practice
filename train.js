@@ -1,3 +1,25 @@
+// TASK K:
+
+// Shunday function yozing, u string qabul qilsin va string ichidagi unli harflar sonini qaytarsin.
+// MASALAN: countVowels("string") return 1;
+
+function nechtaUnli(word) {
+  let unli = ["a", "i", "e", "u", "o"];
+  let count = 0;
+
+  for (i = 0; i < word.length; i++) {
+    if (unli.includes(word[i])) {
+      count++;
+    }
+  }
+  return count;
+}
+result1 = nechtaUnli("string");
+console.log("result:", result);
+
+result2 = nechtaUnli("banana");
+console.log("result2:", result2);
+
 //TASK-G
 // Yagona parametrga ega function tuzing.
 // Va bu function parametr orqalik integer ma'lumot turlariga ega bo'lgan bir arrayni qabul qilsin.
@@ -6,20 +28,20 @@
 // MASALAN: getHighestIndex([5, 21, 12, 21 ,8]); return qiladi 1 sonini
 // Yuqoridagi misolda, birinchi indeksda 21 joylashgan.
 // Va bu 21 soni arrayning tarkibidagi birinchi eng katta son hisobladi va bizga uning indeksi 1 qaytadi.
-function getHighestIndex(list) {
-  let max = list[0];
+// function getHighestIndex(list) {
+//   let max = list[0];
 
-  for (i = 0; i < list.length; i++) {
-    if (list[i] > max) {
-      max = list[i];
-    }
-  }
-  let index = list.indexOf(max);
-  return index;
-}
+//   for (i = 0; i < list.length; i++) {
+//     if (list[i] > max) {
+//       max = list[i];
+//     }
+//   }
+//   let index = list.indexOf(max);
+//   return index;
+// }
 
-result = getHighestIndex([5, 21, 12, 21, 8]);
-console.log(result);
+// result = getHighestIndex([5, 21, 12, 21, 8]);
+// console.log(result);
 
 //TASK F
 // Yagona string argumentga ega findDoublers nomli function tuzing
