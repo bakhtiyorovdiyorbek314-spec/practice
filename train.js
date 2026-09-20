@@ -1,24 +1,36 @@
+// TASK L:
+
+// Shunday function yozing, u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
+// MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
+function reverseSentence(text) {
+  const word = text.split(" ");
+  const chappaWord = word.map((word) => word.split("").reverse().join(""));
+  const chappaGap = chappaWord.join(" ");
+  return chappaGap;
+}
+
+console.log(reverseSentence("we like coding"));
 // TASK K:
 
 // Shunday function yozing, u string qabul qilsin va string ichidagi unli harflar sonini qaytarsin.
 // MASALAN: countVowels("string") return 1;
 
-function nechtaUnli(word) {
-  let unli = ["a", "i", "e", "u", "o"];
-  let count = 0;
+// function nechtaUnli(word) {
+//   let unli = ["a", "i", "e", "u", "o"];
+//   let count = 0;
 
-  for (i = 0; i < word.length; i++) {
-    if (unli.includes(word[i])) {
-      count++;
-    }
-  }
-  return count;
-}
-result1 = nechtaUnli("string");
-console.log("result:", result);
+//   for (i = 0; i < word.length; i++) {
+//     if (unli.includes(word[i])) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// result1 = nechtaUnli("string");
+// console.log("result:", result);
 
-result2 = nechtaUnli("banana");
-console.log("result2:", result2);
+// result2 = nechtaUnli("banana");
+// console.log("result2:", result2);
 
 //TASK-G
 // Yagona parametrga ega function tuzing.
